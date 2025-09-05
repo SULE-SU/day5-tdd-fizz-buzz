@@ -23,8 +23,36 @@ public class FizzBuzzTest {
         String word = FizzBuzz.countOff(order);
 
         assertEquals("2" , word);
-
     }
+
+    @Test
+    public void should_return_fizz_when_input_3() {
+        int order = 3;
+
+        String word = FizzBuzz.countOff(order);
+
+        assertEquals("Fizz" , word);
+    }
+
+    @Test
+    public void should_return_buzz_when_input_5() {
+        int order = 5;
+
+        String word = FizzBuzz.countOff(order);
+
+        assertEquals("Buzz" , word);
+    }
+
+    @Test
+    public void should_return_fizzbuzz_when_input_15() {
+        int order = 15;
+
+        String word = FizzBuzz.countOff(order);
+
+        assertEquals("FizzBuzz" , word);
+    }
+
+
 
 
 }
